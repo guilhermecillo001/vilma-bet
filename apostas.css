@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414; /* Preto de fundo */
+    color: white;
+    text-align: center;
+}
+
+header {
+    background-color: #e60000; /* Vermelho */
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.apostas-container {
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+.apostas-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff5555;
+}
+
+.apostas-info p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.apostas-interativo {
+    margin-bottom: 40px;
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff5555; /* Vermelho claro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3030; /* Vermelho mais intenso */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
+}
+
+#resultado-aposta {
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.feedback-apostas {
+    margin-top: 20px;
+}
+
+#novo-aposta-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#novo-aposta-btn:hover {
+    background-color: #d50000;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7);
+}
+
+footer {
+    background-color: #e60000;
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .apostas-container h2 {
+        font-size: 28px;
+    }
+
+    .apostas-interativo input {
+        width: 70%;
+    }
+
+    button, #novo-aposta-btn {
+        width: 70%;
+    }
+}

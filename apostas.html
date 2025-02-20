@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostas - Vilma.bet</title>
+    <link rel="stylesheet" href="apostas.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Vilma.bet</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jogo.html">Jogo de Adivinhação</a></li>
+                <li><a href="apostas.html">Apostas</a></li>
+                <li><a href="depositar.html">Depositar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="apostas-container">
+        <h2>Aposte agora na Vilma.bet!</h2>
+        <div class="apostas-info">
+            <p>Escolha o valor da sua aposta e o número para apostar. Se acertar, você pode ganhar!</p>
+        </div>
+
+        <div class="apostas-interativo">
+            <input type="number" id="valor-aposta" placeholder="Valor da Aposta (R$)" min="1">
+            <input type="number" id="numero-aposta" placeholder="Número para Apostar" min="1" max="100">
+            <button id="apostar-btn">Fazer Aposta</button>
+            <p id="resultado-aposta"></p>
+        </div>
+
+        <div class="feedback-apostas">
+            <button id="novo-aposta-btn">Nova Aposta</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vilma.bet | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="apostas.js"></script>
+</body>
+</html>
